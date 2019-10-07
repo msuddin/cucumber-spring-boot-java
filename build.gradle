@@ -1,16 +1,26 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
 }
 
 group 'com.thetestroom'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.5.RELEASE'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.5.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+bootJar {
+    manifest {
+        attributes 'Start-Class': 'com.thetestroom.WebApplicationRunner'
+    }
 }
