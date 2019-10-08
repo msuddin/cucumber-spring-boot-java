@@ -1,15 +1,16 @@
-# Sample Java Automation Framework
+# Sample Cucumber Spring Boot Java
+
 ## Purpose of this project
-Firstly...
-A FRAMEWORK IS NOT THE SOLUTION TO EVERY PROJECT THAT NEEDS AN AUTOMATION SOLUTION - YOU NEED TO UNDERSTAND THE PROBLEM FIRST
-ONCE YOU KNOW WHAT THE PROBLEM IS AND WHAT THE REQUIREMENTS ARE, BUILD THE SOLUTION
+
 ### Purpose
-* Build a simple web application that does some simple online form submission using SpringBoot
-* Write tests using plain Java (using RestTestTemplate where needed) and Cucumber
-* Incorporate Design Patterns where needed (Page Object, Singleton, Facade)
+* A simple application that has only one endpoint and returns a path variable from the url
+* A test using RestTestTemplate and Sprint Boot
+* A test using Cucumber with Spring Boot
+
 ## Instructions 
 ### Running via terminal
-We need to firstly build the jar locally. Whilst in the root directory of the project run the following (this also run's tests):
+Firstly need to build the jar locally.
+Whilst in the root directory of the project run the following (this also run's unit and cucumber tests):
 ```
 ./gradlew clean build
 ```
@@ -17,6 +18,7 @@ Now run the following command from the root directory:
 ```
 java -jar build/lib/*jar
 ```
+
 ### Testing to see if Application is Running
 In a terminal, run the following command:
 ```
