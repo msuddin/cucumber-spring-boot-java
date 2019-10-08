@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WebApplicationController {
+public class ApplicationController {
 
     @RequestMapping("hi/{name}")
     public String helloEndPoint(@PathVariable() String name) {
